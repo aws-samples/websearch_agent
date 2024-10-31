@@ -75,11 +75,6 @@ If you deployed the v1 version, you have 2 options:
 - delete the v1 stack
 - rename the components in the v2 stack to avoid naming conflicts
 
-## Testing
-
-Test scripts are provided for both web search functions:
-
-- `test/invoke-agent.py`: Test the basic web search
 
 ## Cleaning Up
 
