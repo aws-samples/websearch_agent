@@ -16,7 +16,7 @@ AWS_REGION = os.environ.get("AWS_REGION", "us-west-2")
 
 
 def get_tavily_api_key():
-    return get_from_secretstore_or_env("TAVILY_API_KEY")
+    return get_from_secretstore_or_env("TAVILY_API_KEY", AWS_REGION)
 
 
 async def perform_tavily_searches(queries: List[str]) -> List[TavilySearchResult]:

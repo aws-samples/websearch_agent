@@ -29,7 +29,7 @@ def is_env_var_set(env_var: str) -> bool:
     )
 
 
-def get_from_secretstore_or_env(key: str, region: Optional[str]) -> str:
+def get_from_secretstore_or_env(key: str, region: Optional[str] = None) -> str:
     """
     Retrieve a secret value either from environment variables or AWS Secrets Manager.
 
