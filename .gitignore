@@ -2,3 +2,5 @@ cdk.out
 **/__pycache__/**
 cdk/__pychache__/**
 env.sh
+.aider*
+.env
