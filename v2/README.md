@@ -27,11 +27,11 @@ This is version 2 of the Web Search Agent, featuring enhanced capabilities and i
 
 ## Setup
 
-1. Clone the repository and navigate to the V2 directory:s
+1. Clone the repository and follow the setups steps that are the same as in V1.
 
    ```
    git clone https://github.com/aws-samples/websearch_agent
-   cd websearch_agent/v2
+   cd websearch_agent
    ```
 
 2. Create and activate a Python virtual environment:
@@ -56,6 +56,7 @@ This is version 2 of the Web Search Agent, featuring enhanced capabilities and i
 
 5. Deploy the CDK stack:
    ```
+   cd v2
    cdk deploy
    ```
 
@@ -69,12 +70,16 @@ The `config.yaml` file contains important settings:
 - Lambda function names and configurations
 - Action group names
 
+If you deployed the v1 version, you have 2 options:
+
+- delete the v1 stack
+- rename the components in the v2 stack to avoid naming conflicts
+
 ## Testing
 
 Test scripts are provided for both web search functions:
 
 - `test/invoke-agent.py`: Test the basic web search
-- `lambda/advanced_web_search/test_advanced_web_search.py`: Test the advanced search
 
 ## Cleaning Up
 
