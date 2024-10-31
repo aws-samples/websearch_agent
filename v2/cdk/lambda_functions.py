@@ -52,7 +52,7 @@ def create_lambda_functions(
             "ACTION_GROUP": f"{config['ADVANCED_SEARCH_ACTION_GROUP_NAME']}",
             "SMART_LLM": config["SMART_LLM"],
             "FAST_LLM": config["FAST_LLM"],
-            "CROSS_REGION_INFERENCE": config["use_cross_region_inference"],
+            "CROSS_REGION_INFERENCE": str(config["use_cross_region_inference"]).lower(),
         },
     )
 
